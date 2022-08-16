@@ -9,11 +9,11 @@
 http://nomelet.co.kr/
 
 노멜렛이라는 의류 쇼핑몰 사이트를 각 조원이 클론코딩합니다.<br/>
-HTML, CSS, Javascript의 기본기를 튼튼히 다지기 위해 바닐라 자바스크립트로 진행합니다.
-Bare Minimum은 필수로 각자 기능을 구현하며 가능한 분은 Advanced까지 진행합니다.
-구현한 기능은 체크박스에 표시 해 주세요:)
-
-Advanced까지 모두 했는데 더 추가하고싶은 기능이 있다면 Advanced 하단에 구현한 기능을 추가해서 적어주세요
+HTML, CSS, Javascript의 기본기를 튼튼히 다지기 위해 바닐라 자바스크립트로 진행합니다.<br/>
+Bare Minimum은 필수로 각자 기능을 구현하며 가능한 분은 Advanced까지 진행합니다.<br/>
+구현한 기능은 체크박스에 표시 해 주세요:)<br/>
+<br/>
+Advanced까지 모두 했는데 더 추가하고싶은 기능이 있다면 Advanced 하단에 구현한 기능을 추가해서 적어주세요<br/>
 
 ### Bare Minimum 
 - 2주에 나눠서진행 
