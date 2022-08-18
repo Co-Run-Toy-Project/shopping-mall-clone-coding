@@ -32,13 +32,7 @@ Advanced까지 모두 했는데 더 추가하고싶은 기능이 있다면 Advan
 💡 첫째 주
 
 - [ ] 외관 완성
-  
 - [ ] 반응형 (작은화면 메뉴 토글 포함)
-  토글안의 메뉴는 링크로 빈바를 넣어주세요.
-  ![image](https://user-images.githubusercontent.com/99955022/185450812-faf88259-06a0-4872-92f3-65fc4bbe195b.png)
-  ![image](https://user-images.githubusercontent.com/99955022/185450889-51318cd9-b691-4c13-b229-bebade53362a.png)
-  ![image](https://user-images.githubusercontent.com/99955022/185451326-cd60029e-adc5-4bbc-a953-875e22f2137a.png)
-
 - [ ] 메뉴바 고정
 
 💡 두번째 주 
