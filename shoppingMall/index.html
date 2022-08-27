@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Nanum+Gothic:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/215cd41e4a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./side.css">
+  <script src="./products.js" defer></script>
+  <script src="./main.js" defer></script>
+  <title>오믈렛</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Header/Nav -->
+    <header id="nav_bar">
+      <!--menu bar -->
+      <!-- logo -->
+      <h1>
+        <a href="/" class="logo">OMELETTE</a>
+      </h1>
+
+      <nav id="nav">
+        <div class="overlay"></div>
+        <ul class="menu_container">
+          <div class="menu_overlay"></div>
+          <div class="menu_lists">
+            <li class="menu">
+              <a class="hover" href="/">ABOUT</a>
+            </li>
+            <li class="menu">
+              <!-- onclick="location.href='./shop.html'" -->
+              <button class="shop hover" type="button">SHOP</button>
+            </li>
+            <li class="menu"><a class="hover" href="/">COLLECTION</a></li>
+          </div>
+
+        <div class="menu_lists">
+          <li class="menu">
+            <button class="hover" type="button">COMMUNITY</button>
+            <div class="toggle_btn">
+              <ul>
+                <li><a href="/">NOTICE</a></li>
+                <li><a href="/">Q&A</a></li>
+                <li><a href="/">REVIEW</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu">
+            <button class="hover" type="button">ACCOUNT</button>
+            <div class="toggle_btn">
+              <ul>
+                <li><a href="/">Sign In</a></li>
+                <li><a href="/">My Page</a></li>
+                <li><a href="/">Order</a></li>
+                <li><a href="/">Cart</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu">
+            <a class="hover" href="/">CART</a>
+          </li>
+          <li class="menu">
+            <a class="hover" href="/">SEARCH</a>
+          </li>
+        </div>
+      </ul>
+    
+          <button type="button" class="menu_toggle_btn">
+            <i class="fa-solid fa-ellipsis"></i>
+            <!-- <i class="fa-regular fa-ellipsis"></i> -->
+          </button>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main id="main">
+        <!-- side menu -->
+      <aside id="side">
+        <ul class="side_menu">
+          <li><a class="hover side_btn" href="/">All</a></li>
+          <li><a class="hover side_btn" href="/">Outer</a></li>
+          <li><a class="hover side_btn" href="/">Tops</a></li>
+          <li><a class="hover side_btn" href="/">Bottoms</a></li>
+          <li><a class="hover side_btn" href="/">Dresses</a></li>
+          <li><a class="hover side_btn" href="/">Acc</a></li>
+        </ul>
+      </aside>
+      
+      <section>
+        <div class="main_container">
+          <div class="pic1">
+            <img class="pic1" src="http://nomelet.co.kr/web/upload/main/main1.jpeg" alt="">
+          </div>
+          <div class="main_imgs">
+            <div class="pic2">
+              <img class="pic2" src="http://nomelet.co.kr/web/upload/main/main2.jpeg" alt="">
+            </div>
+            <div class="pic3">
+              <img class="pic3" src="http://nomelet.co.kr/web/upload/main/main3.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="shop_container">
+          <ul class="item_container"></ul>
+        </div>
+      </section>
+      <!-- <iframe id="shop" class="hide" src="./shop.html" frameborder="0" scrolling="no"></iframe> -->
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer_flex">
+        <address class="shop_details">
+          <span class="bold">Mon - Fri 10:00am ~ 19:00pm </span> <br/>
+          <span class="bold">Closed on Weekend, Holidays</span> <br/>
+          <span class="bold">Company Info.</span> Omelette, <br/>
+          <span class="bold">Email.</span> 유은비 <a href="mailto:rachelyu.1025@gmail.com">rachelyu.1025@gmail.com</a> <br/>
+          <span class="bold">Phone.</span> <a href="tel:+12345678910">123-4567-8910</a> <br/>
+          <span class="bold">Address.</span> 12345 경기도 어딘가시 모르겠30길 48 123호 (오믈렛) <br/>
+          <span class="bold">
+            ©OMELETTE
+          </span>
+        </address>
+        <ul class="shop_about">
+          <li><a href="/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li>
+            <a href="/">
+            <img class="blog_img" src="https://mblogthumb-phinf.pstatic.net/MjAyMDA5MjRfMTQ0/MDAxNjAwOTI4MDIxMTQ4.LGGIcSU4FrU6c_-MgA5xerYp1KXlF290JkqaG9uTPskg.MHNU4ycUh0ivOCxgEDo6YWorwOtonE7zwtmJMr1I3RAg.PNG.thdnjs4484/%EB%B8%94%EB%A1%9C%EA%B7%B81.png?type=w800" alt="">
+            </a>
+          </li>
+          <li><a href="/">Agreement</a></li>
+          <li><a href="/">Privacy</a></li>
+        </ul>
+      </div>  
+    </footer>
+  </div>
+</body>
+</html>
