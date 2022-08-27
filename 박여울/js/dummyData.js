@@ -24,5 +24,13 @@ const dummyData = [
         price: "95,000",
         color: "blue"
     },
+    {
+        id: 4,
+        category: "Tops",
+        img: "http://nomelet.co.kr/web/product/medium/202208/7410f395bb7c5c624d2720029c78d8b6.jpg",
+        item_name: "Finn boy 80s blue denim by CALIK (from Turkey)",
+        price: "95,000",
+        color: "blue"
+    },
 
 ]
