@@ -1,0 +1,11 @@
+.business__info>ul{
+    list-style: none;
+    margin-bottom: 300px;
+}
+.business__info>ul>li{
+    font-size: 12px;
+}
+
+li{
+    list-style: none;
+}
