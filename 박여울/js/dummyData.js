@@ -1,130 +1,348 @@
-
-const dummyData = [
-    {
+const dummyData = 
+[
+   {
         id: 1,
         category: "Outer",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTIz/MDAxNjYxNjE1NjA4ODY5.7ZogHVOOIqafOL0vbI0lB_QUJl3SAY8IXh1jy12y_-0g.1VzhCaakHpiFNqxxQGdJrPN2b10kTZeX1h3Qk1oXSeEg.JPEG.qyoong3579/5.jpg?type=w773",
-        item_name: "남자 마이 자켓",
+        img: "../img/1.jpg",
+        item_name: "멋쟁이 청바지",
         price: "35,000"
     },
     {
         id: 2,
         category: "Tops",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfNDIg/MDAxNjYxNjE1NjA4ODUy.l1gpDYlzZIMSbsgPgfJfRhzFv_1Jkip0UdPbKKoXT14g.mghJS6qNb4MYzFNwlW5rJsHBWRwB2gGNYeaKYoCcsTAg.JPEG.qyoong3579/6.jpg?type=w773",
-        item_name: "블라우스 셔츠",
+        img: "../img/2.jpg",
+        item_name: "세트 아니고 치마만",
         price: "15,000"
     },
     {
         id: 3,
         category: "Bottoms",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTA1/MDAxNjYxNjE1NjIwOTMy.HtuZzaqgk7HPnyEfg4dhGxC77JysszE3gAVnMoYnYeEg.c2gradn6tm4TgOrwZl-REe273LEZ0oJ-Ozs52boaBLUg.JPEG.qyoong3579/1.jpg?type=w773",
-        item_name: "멋쟁이 청바지",
+        img: "../img/3.jpg",
+        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
         price: "40,000"
     },
     {
         id: 4,
         category: "Outer",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfODQg/MDAxNjYxNjE1NjEzMjAy.nEgpZhx3U6URodzGC8_bXft36kKZXP7HHv5yKThloDwg.YZpbJu7gVlUwD9wVejKxgmJGUGrFwj4F1CHmxTWcw_Mg.JPEG.qyoong3579/4.jpg?type=w773",
-        item_name: "오버핏 흰색 마이",
+        img: "../img/4.jpg",
+        item_name: "오버핏인데 나는 그냥핏 흰색 마이",
         price: "50,000"
     },
     {
         id: 5,
         category: "Tops",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMjQ1/MDAxNjYxNjE1NjEzMjQ4.CjeXZ_OMTTPz7l6VOTE8o3mJmf9hDZmE_UY7bRrlqVMg.M-S8r0zKO5UpQ2x_VcJcCUfxP6gLCGHwTZTLBYBs9T0g.JPEG.qyoong3579/3.jpg?type=w773",
-        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
+        img: "../img/5.jpg",
+        item_name: "남자 마이 자켓",
         price: "9,000"
     },
     {
         id: 6,
         category: "Bottoms",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfNTEg/MDAxNjYxNjE1NjEzMjAx.9XSOZU863TSn6DpOvuD_pYDmmAQgWHmHj7X01hL1L4wg.15JkGEGJ72YyFl3DgaguZWXcAUENdpSRnOEQSNoUwVQg.JPEG.qyoong3579/2.jpg?type=w773",
-        item_name: "세트 아니고 치마만",
+        img: "../img/6.jpg",
+        item_name: "블라우스 셔츠",
         price: "90,000"
     },
     {
         id: 7,
         category: "Outer",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTkx/MDAxNjYxNjE1NjA4ODkz.uW7kwJH5VJ36ULQAmIVLQC98Y68_ox609EpkOvLyrEkg.C1tYGQDXn2X0-FNamF4mgu7zLb3YGXL3uHyqDXRr3_Ug.JPEG.qyoong3579/9.jpg?type=w773",
-        item_name: "옷인줄알았지?",
+        img: "../img/7.jpg",
+        item_name: "(해외직구)이태리장인 반팔티",
         price: "5,000"
     },
     {
         id: 8,
         category: "Tops",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTI4/MDAxNjYxNjE1NjA4ODgz.L_TL_gsSzZJjeNeR9sd2eVqKKl37jnTBS1wJU-Fpb9kg.LbaqbzNiRjl8OeeQpgmo481HdcFdiSm6dn7hxzDVxcog.JPEG.qyoong3579/7.jpg?type=w773",
-        item_name: "(해외직구)이태리장인 반팔티",
+        img: "../img/8.jpg",
+        item_name: "아무나 못입는 원피스",
         price: "100,000"
     },
     {
         id: 9,
         category: "Bottoms",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTAg/MDAxNjYxNjE1NjA4ODky.f0a9BfbzJRT1FEKyjrdXPKVgv640kfJo5t_esx6BctUg.IF5MmPGFrA_2-1deCD-FLZb9SGqVDq6tHV_hIKsZNbkg.JPEG.qyoong3579/8.jpg?type=w773",
-        item_name: "아무나 못입는 원피스",
+        img: "../img/9.jpg",
+        item_name: "옷인줄알았지?",
         price: "43,000"
     },
     {
         id: 10,
         category: "Outer",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTIz/MDAxNjYxNjE1NjA4ODY5.7ZogHVOOIqafOL0vbI0lB_QUJl3SAY8IXh1jy12y_-0g.1VzhCaakHpiFNqxxQGdJrPN2b10kTZeX1h3Qk1oXSeEg.JPEG.qyoong3579/5.jpg?type=w773",
-        item_name: "남자 마이 자켓",
+        img: "../img/1.jpg",
+        item_name: "멋쟁이 청바지",
         price: "35,000"
     },
     {
         id: 11,
         category: "Tops",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfNDIg/MDAxNjYxNjE1NjA4ODUy.l1gpDYlzZIMSbsgPgfJfRhzFv_1Jkip0UdPbKKoXT14g.mghJS6qNb4MYzFNwlW5rJsHBWRwB2gGNYeaKYoCcsTAg.JPEG.qyoong3579/6.jpg?type=w773",
-        item_name: "블라우스 셔츠",
+        img: "../img/2.jpg",
+        item_name: "세트 아니고 치마만",
         price: "15,000"
     },
     {
         id: 12,
         category: "Bottoms",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTA1/MDAxNjYxNjE1NjIwOTMy.HtuZzaqgk7HPnyEfg4dhGxC77JysszE3gAVnMoYnYeEg.c2gradn6tm4TgOrwZl-REe273LEZ0oJ-Ozs52boaBLUg.JPEG.qyoong3579/1.jpg?type=w773",
-        item_name: "멋쟁이 청바지",
+        img: "../img/3.jpg",
+        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
         price: "40,000"
     },
     {
         id: 13,
         category: "Outer",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfODQg/MDAxNjYxNjE1NjEzMjAy.nEgpZhx3U6URodzGC8_bXft36kKZXP7HHv5yKThloDwg.YZpbJu7gVlUwD9wVejKxgmJGUGrFwj4F1CHmxTWcw_Mg.JPEG.qyoong3579/4.jpg?type=w773",
-        item_name: "오버핏 흰색 마이",
+        img: "../img/4.jpg",
+        item_name: "오버핏인데 나는 그냥핏 흰색 마이",
         price: "50,000"
     },
     {
         id: 14,
         category: "Tops",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMjQ1/MDAxNjYxNjE1NjEzMjQ4.CjeXZ_OMTTPz7l6VOTE8o3mJmf9hDZmE_UY7bRrlqVMg.M-S8r0zKO5UpQ2x_VcJcCUfxP6gLCGHwTZTLBYBs9T0g.JPEG.qyoong3579/3.jpg?type=w773",
-        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
+        img: "../img/5.jpg",
+        item_name: "남자 마이 자켓",
         price: "9,000"
     },
     {
         id: 15,
         category: "Bottoms",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfNTEg/MDAxNjYxNjE1NjEzMjAx.9XSOZU863TSn6DpOvuD_pYDmmAQgWHmHj7X01hL1L4wg.15JkGEGJ72YyFl3DgaguZWXcAUENdpSRnOEQSNoUwVQg.JPEG.qyoong3579/2.jpg?type=w773",
-        item_name: "세트 아니고 치마만",
+        img: "../img/6.jpg",
+        item_name: "블라우스 셔츠",
         price: "90,000"
     },
     {
         id: 16,
         category: "Outer",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTkx/MDAxNjYxNjE1NjA4ODkz.uW7kwJH5VJ36ULQAmIVLQC98Y68_ox609EpkOvLyrEkg.C1tYGQDXn2X0-FNamF4mgu7zLb3YGXL3uHyqDXRr3_Ug.JPEG.qyoong3579/9.jpg?type=w773",
-        item_name: "옷인줄알았지?",
+        img: "../img/7.jpg",
+        item_name: "(해외직구)이태리장인 반팔티",
         price: "5,000"
     },
     {
         id: 17,
         category: "Tops",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTI4/MDAxNjYxNjE1NjA4ODgz.L_TL_gsSzZJjeNeR9sd2eVqKKl37jnTBS1wJU-Fpb9kg.LbaqbzNiRjl8OeeQpgmo481HdcFdiSm6dn7hxzDVxcog.JPEG.qyoong3579/7.jpg?type=w773",
-        item_name: "(해외직구)이태리장인 반팔티",
+        img: "../img/8.jpg",
+        item_name: "아무나 못입는 원피스",
         price: "100,000"
     },
     {
         id: 18,
         category: "Bottoms",
-        img: "https://postfiles.pstatic.net/MjAyMjA4MjhfMTAg/MDAxNjYxNjE1NjA4ODky.f0a9BfbzJRT1FEKyjrdXPKVgv640kfJo5t_esx6BctUg.IF5MmPGFrA_2-1deCD-FLZb9SGqVDq6tHV_hIKsZNbkg.JPEG.qyoong3579/8.jpg?type=w773",
-        item_name: "아무나 못입는 원피스",
+        img: "../img/9.jpg",
+        item_name: "옷인줄알았지?",
         price: "43,000"
     },
+    {
+        id: 19,
+        category: "Outer",
+        img: "../img/1.jpg",
+        item_name: "멋쟁이 청바지",
+        price: "35,000"
+    },
+    {
+        id: 20,
+        category: "Tops",
+        img: "../img/2.jpg",
+        item_name: "세트 아니고 치마만",
+        price: "15,000"
+    },
+    {
+        id: 21,
+        category: "Bottoms",
+        img: "../img/3.jpg",
+        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
+        price: "40,000"
+    },
+    {
+        id: 22,
+        category: "Outer",
+        img: "../img/4.jpg",
+        item_name: "오버핏인데 나는 그냥핏 흰색 마이",
+        price: "50,000"
+    },
+    {
+        id: 23,
+        category: "Tops",
+        img: "../img/5.jpg",
+        item_name: "남자 마이 자켓",
+        price: "9,000"
+    },
+    {
+        id: 24,
+        category: "Bottoms",
+        img: "../img/6.jpg",
+        item_name: "블라우스 셔츠",
+        price: "90,000"
+    },
+    {
+        id: 25,
+        category: "Outer",
+        img: "../img/7.jpg",
+        item_name: "(해외직구)이태리장인 반팔티",
+        price: "5,000"
+    },
+    {
+        id: 26,
+        category: "Tops",
+        img: "../img/8.jpg",
+        item_name: "아무나 못입는 원피스",
+        price: "100,000"
+    },
+    {
+        id: 27,
+        category: "Bottoms",
+        img: "../img/9.jpg",
+        item_name: "옷인줄알았지?",
+        price: "43,000"
+    },
+    {
+        id: 28,
+        category: "Outer",
+        img: "../img/1.jpg",
+        item_name: "멋쟁이 청바지",
+        price: "35,000"
+    },
+    {
+        id: 29,
+        category: "Tops",
+        img: "../img/2.jpg",
+        item_name: "세트 아니고 치마만",
+        price: "15,000"
+    },
+    {
+        id: 30,
+        category: "Bottoms",
+        img: "../img/3.jpg",
+        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
+        price: "40,000"
+    },
+    {
+        id: 31,
+        category: "Outer",
+        img: "../img/4.jpg",
+        item_name: "오버핏인데 나는 그냥핏 흰색 마이",
+        price: "50,000"
+    },
+    {
+        id: 32,
+        category: "Tops",
+        img: "../img/5.jpg",
+        item_name: "남자 마이 자켓",
+        price: "9,000"
+    },
+    {
+        id: 33,
+        category: "Bottoms",
+        img: "../img/6.jpg",
+        item_name: "블라우스 셔츠",
+        price: "90,000"
+    },
+    {
+        id: 34,
+        category: "Outer",
+        img: "../img/7.jpg",
+        item_name: "(해외직구)이태리장인 반팔티",
+        price: "5,000"
+    },
+    {
+        id: 35,
+        category: "Tops",
+        img: "../img/8.jpg",
+        item_name: "아무나 못입는 원피스",
+        price: "100,000"
+    },
+    {
+        id: 36,
+        category: "Bottoms",
+        img: "../img/9.jpg",
+        item_name: "옷인줄알았지?",
+        price: "43,000"
+    }
 
 ]
+// console.log(dummyData.length)
+
+function setDummyData (dummyData) {
+    const makeItemBox = document.createElement('div');
+    makeItemBox.className = "item-box";
+
+    const itemImg = document.createElement("div");
+    itemImg.className = "item-img-box";
+
+    const img = document.createElement("img");
+    img.className = "item-img";
+    img.setAttribute("src", dummyData.img);
+    img.setAttribute("alt", "");
+
+    const itemInfo = document.createElement("div");
+    itemInfo.className = "item-info";
+
+    const itemName = document.createElement("div");
+    itemName.className = "item-name";
+    itemName.textContent = dummyData.item_name;
+
+    const itemPrice = document.createElement("div");
+    itemPrice.className = "item-price";
+    itemPrice.textContent = dummyData.price;
+
+    itemImg.append(img);
+    itemInfo.append(itemName);
+    itemInfo.append(itemPrice);
+    makeItemBox.append(itemImg);
+    makeItemBox.append(itemInfo)
+    
+// makeItemBox.append(itemImg)
+return makeItemBox
+}
+
+const render = el => {
+    for (let i = 0; i < dummyData.length; i++){
+        el.append(setDummyData(dummyData[i]))
+    }
+}
+const setItem = document.querySelector(".shop-contents")
+
+render(setItem);
+console.log("안ㄴ녕")
+
+
+// function displayItems() {
+//   const container = document.querySelector(".items");
+//   container.innerHTML = dummyData.map((item) => createHTMLString(item)).join("");
+//   //join -> 문자열의 배열을 하나의 문자열로 병합
+//   console.log(container)
+// }
+
+// function createHTMLString(item) {
+//   return 
+//     <li class="item">
+//         <img src="${item.image}" alt="${item.type}" class="item__thumbnail" />
+//         <span class="item__description">${item.gender}, ${item.size}</span>
+//     </li>
+//     ;
+// }
+
+// function onButtonClick(event, items) {
+//   const dataset = event.target.dataset;
+//   const key = dataset.key;
+//   const value = dataset.value;
+
+//   if (key == null || value == null) {
+//     //정보가 들어있지 않다면 함수를 끝냄
+//     return;
+//   }
+
+//   const filtered = items.filter((item) => item[key] === value);
+//   displayItems(filtered);
+//   // 아이템이라는 오브젝트 안에 키에 해당하는 값이 value 와 똑같은 것들만 함수로 전달
+// }
+
+// function setEventListeners(items) {
+//   const logo = document.querySelector(".logo");
+//   const buttons = document.querySelector(".buttons");
+//   //버튼들이 들어있는 컨테이너에 이벤트 리스너를 등록해 한곳에서만 핸들링 할 수 있게함
+//   logo.addEventListener("click", () => displayItems(items));
+//   buttons.addEventListener("click", (event) => onButtonClick(event, items));
+// }
+
+// loadItems() //아이템을 적절히 받아와서 프로미스가 값을 성공적으로
+//   //전달해주면 전달 받은 아이템들을 이용해 함수들을 실행.
+//   .then((items) => {
+//     displayItems(dummyData);
+//     setEventListeners(items);
+//   })
+//   .catch(console.log);

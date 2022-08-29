@@ -40,6 +40,8 @@
         border: 0;
         outline: 0;
         background: none;
+        cursor: pointer;
+        z-index: 100;
     }
     .inner {
         padding: 50px 70px;
@@ -54,7 +56,7 @@
         height: 100%;
         top: 0;
         right: 0;
-        z-index: 10;
+        z-index: 99;
         background: #ffffff;
         overflow-y: auto;
         font-size: 12pt;
@@ -103,7 +105,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 8;
+        z-index: 98;
         background-color: rgba(0,0,0,0.35);
         -webkit-animation: fade 350ms;
         -moz-animation: fade 350ms;
