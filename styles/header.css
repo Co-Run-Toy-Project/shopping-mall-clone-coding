@@ -1,0 +1,90 @@
+* {
+    border: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+  color: black;
+}
+
+.container{
+  /* background: #f3e5f5; */
+  /*
+  flex로 왼오 정렬,
+  align-items:는 정렬 기준 padding이라던가
+  justify-content: space-around; 둘레에 균일한 간격
+  */
+  display: flex;
+  margin-top: 50px;
+  /* border: 2px solid blueviolet; */
+  align-items: center;
+}
+
+.nav__container {
+  display: flex;
+  /* width를 바꿔주니까 됐다 */
+  width: 100vw;
+  justify-content: space-evenly;
+  /* border: 2px solid burlywood; */
+}
+
+/* nav들을 수평 정렬 */
+.category {
+  display: flex;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+/* li만 hover는 안되나 */
+/* .category > li:hover {
+  color: grey;
+} */
+
+
+ul > li {
+  list-style: none;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+.menu {
+  /* border: 2px solid red; */
+  padding-left: 30px;
+}
+
+.menu > a:hover {
+  color: grey;
+}
+
+
+
+
+.submenu__container{
+  display: none;
+  margin-top: 20px;
+}
+
+.top:hover .submenu__container{
+  display: block;
+  transition: 1s;
+}
+
+.submenu {
+  margin-top: 5px;
+}
+
+.submenu > a:hover {
+  color: grey;
+}
+
+.logo > img {
+  width: 102px;
+  height: 17px;
+}
+
+ul > .top {
+  vertical-align: top;
+}
