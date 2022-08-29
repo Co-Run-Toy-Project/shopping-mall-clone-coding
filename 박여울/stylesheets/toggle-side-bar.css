@@ -3,18 +3,34 @@
     display: none;
 }
 
-.side-bar {
-    display: none;
-}
 
-.side-bg {
+.toggle-side-bar {
     display: none;
+    transition: 2s
 }
 
 @media screen and (max-width: 1024px) {
+    .close-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        height: 2rem;
+        margin: 10px;
+        box-shadow: 2px 2px 5px 2px gray;
+        cursor: pointer;
+    }
     .cate-menu,
     .header-right {
         display: none;
+    }
+    .toggle-side-bar.active {
+        display: block;
+        transition: 2s
+    }
+    /* 왜 애니메이션적용이 안될까? */
+    .toggle-side-bar.animate {
+        transition-duration: 2s;
     }
     .toggle {
         display: block;
@@ -99,7 +115,7 @@
     }
     
     .side-bar-menu {
-        padding: 10% 10% 10% 25%;
+        padding: 0% 10% 10% 25%;
         font-size: 12px;
         font-family: 'Hind', sans-serif;
     }

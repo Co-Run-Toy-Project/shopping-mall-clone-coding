@@ -1,9 +1,14 @@
-const togleBtn = document.querySelector('.toggle-side-bar');
-const menuBox = document.querySelector('.side-bar');
+const togleBtn = document.querySelector('.toggle');
+const closeBtn = document.querySelector('.close-btn')
+const sideBar = document.querySelector('.toggle-side-bar');
 
 
 togleBtn.addEventListener('click', () => {
-    menuBox.classList.toggle(active);
+    sideBar.classList.toggle('active');
+    sideBar.classList.add('animate');
 })
 
-// 수정중
+closeBtn.addEventListener('click', () => {
+    sideBar.classList.toggle('active');
+    sideBar.classList.add('animate');
+})
