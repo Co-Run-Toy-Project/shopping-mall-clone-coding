@@ -67,147 +67,147 @@ const dummyData =
         id: 10,
         category: "Outer",
         img: "../img/1.jpg",
-        item_name: "멋쟁이 청바지",
+        item_name: "2멋쟁이 청바지",
         price: "35,000"
     },
     {
         id: 11,
         category: "Tops",
         img: "../img/2.jpg",
-        item_name: "세트 아니고 치마만",
+        item_name: "2세트 아니고 치마만",
         price: "15,000"
     },
     {
         id: 12,
         category: "Bottoms",
         img: "../img/3.jpg",
-        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
+        item_name: "2흰색원피스는 아니고 검정색 천쪼가리",
         price: "40,000"
     },
     {
         id: 13,
         category: "Outer",
         img: "../img/4.jpg",
-        item_name: "오버핏인데 나는 그냥핏 흰색 마이",
+        item_name: "2오버핏인데 나는 그냥핏 흰색 마이",
         price: "50,000"
     },
     {
         id: 14,
         category: "Tops",
         img: "../img/5.jpg",
-        item_name: "남자 마이 자켓",
+        item_name: "2남자 마이 자켓",
         price: "9,000"
     },
     {
         id: 15,
         category: "Bottoms",
         img: "../img/6.jpg",
-        item_name: "블라우스 셔츠",
+        item_name: "2블라우스 셔츠",
         price: "90,000"
     },
     {
         id: 16,
         category: "Outer",
         img: "../img/7.jpg",
-        item_name: "(해외직구)이태리장인 반팔티",
+        item_name: "2(해외직구)이태리장인 반팔티",
         price: "5,000"
     },
     {
         id: 17,
         category: "Tops",
         img: "../img/8.jpg",
-        item_name: "아무나 못입는 원피스",
+        item_name: "2아무나 못입는 원피스",
         price: "100,000"
     },
     {
         id: 18,
         category: "Bottoms",
         img: "../img/9.jpg",
-        item_name: "옷인줄알았지?",
+        item_name: "2옷인줄알았지?",
         price: "43,000"
     },
     {
         id: 19,
         category: "Outer",
         img: "../img/1.jpg",
-        item_name: "멋쟁이 청바지",
+        item_name: "3멋쟁이 청바지",
         price: "35,000"
     },
     {
         id: 20,
         category: "Tops",
         img: "../img/2.jpg",
-        item_name: "세트 아니고 치마만",
+        item_name: "3세트 아니고 치마만",
         price: "15,000"
     },
     {
         id: 21,
         category: "Bottoms",
         img: "../img/3.jpg",
-        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
+        item_name: "3흰색원피스는 아니고 검정색 천쪼가리",
         price: "40,000"
     },
     {
         id: 22,
         category: "Outer",
         img: "../img/4.jpg",
-        item_name: "오버핏인데 나는 그냥핏 흰색 마이",
+        item_name: "3오버핏인데 나는 그냥핏 흰색 마이",
         price: "50,000"
     },
     {
         id: 23,
         category: "Tops",
         img: "../img/5.jpg",
-        item_name: "남자 마이 자켓",
+        item_name: "3남자 마이 자켓",
         price: "9,000"
     },
     {
         id: 24,
         category: "Bottoms",
         img: "../img/6.jpg",
-        item_name: "블라우스 셔츠",
+        item_name: "3블라우스 셔츠",
         price: "90,000"
     },
     {
         id: 25,
         category: "Outer",
         img: "../img/7.jpg",
-        item_name: "(해외직구)이태리장인 반팔티",
+        item_name: "3(해외직구)이태리장인 반팔티",
         price: "5,000"
     },
     {
         id: 26,
         category: "Tops",
         img: "../img/8.jpg",
-        item_name: "아무나 못입는 원피스",
+        item_name: "3아무나 못입는 원피스",
         price: "100,000"
     },
     {
         id: 27,
         category: "Bottoms",
         img: "../img/9.jpg",
-        item_name: "옷인줄알았지?",
+        item_name: "3옷인줄알았지?",
         price: "43,000"
     },
     {
         id: 28,
         category: "Outer",
         img: "../img/1.jpg",
-        item_name: "멋쟁이 청바지",
+        item_name: "4멋쟁이 청바지",
         price: "35,000"
     },
     {
         id: 29,
         category: "Tops",
         img: "../img/2.jpg",
-        item_name: "세트 아니고 치마만",
+        item_name: "4세트 아니고 치마만",
         price: "15,000"
     },
     {
         id: 30,
         category: "Bottoms",
         img: "../img/3.jpg",
-        item_name: "흰색원피스는 아니고 검정색 천쪼가리",
+        item_name: "4흰색원피스는 아니고 검정색 천쪼가리",
         price: "40,000"
     },
     {
@@ -221,35 +221,35 @@ const dummyData =
         id: 32,
         category: "Tops",
         img: "../img/5.jpg",
-        item_name: "남자 마이 자켓",
+        item_name: "4남자 마이 자켓",
         price: "9,000"
     },
     {
         id: 33,
         category: "Bottoms",
         img: "../img/6.jpg",
-        item_name: "블라우스 셔츠",
+        item_name: "4블라우스 셔츠",
         price: "90,000"
     },
     {
         id: 34,
         category: "Outer",
         img: "../img/7.jpg",
-        item_name: "(해외직구)이태리장인 반팔티",
+        item_name: "4(해외직구)이태리장인 반팔티",
         price: "5,000"
     },
     {
         id: 35,
         category: "Tops",
         img: "../img/8.jpg",
-        item_name: "아무나 못입는 원피스",
+        item_name: "4아무나 못입는 원피스",
         price: "100,000"
     },
     {
         id: 36,
         category: "Bottoms",
         img: "../img/9.jpg",
-        item_name: "옷인줄알았지?",
+        item_name: "4옷인줄알았지?",
         price: "43,000"
     }
 
