@@ -1,16 +1,19 @@
 
   .article {
-    max-width: 960px;
-    margin: 0 auto;
+
     padding: 2rem;
     text-align: center;
   }
   
+  .contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
   .content {
-    display: flex;
     padding: 0.3em 0;
     list-style: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin: 10px;
   }
   
   .content__id,
@@ -63,4 +66,19 @@
   
   ion-icon {
     padding-top: 0.05rem;
+  }
+
+  @media screen and (max-width: 1032px){
+    .contents{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+  }
+  .article{
+    margin: 0.1rem;
+    padding: 0.2rem;
+}
+.content{
+    max-width: 15em;
+}
+
   }

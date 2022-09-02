@@ -114,6 +114,6 @@
 
     .main__header>.hamburger{
         display: block;
-        margin-right: 10px;
+        margin-right: 2em;
     }
 }

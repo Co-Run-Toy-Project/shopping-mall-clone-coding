@@ -17,7 +17,7 @@ const buttons = document.querySelector(".buttons");
 const numOfContent = clothes.length;
 
 const maxButton = 5;
-let maxContent = 6;
+let maxContent = 12;
 const maxPage = Math.ceil(numOfContent / maxContent);
 let page = 1;
 

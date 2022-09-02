@@ -27,37 +27,23 @@
 }
 
 .body_container{
-
-    width: 100%;
-}
-
-.body_container{
-    width: 4rem;
     font-size: 12px;
     justify-content: end;
 }
 
 .body_container >li{
     width: 300px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+
     font-size: 12px;
     justify-content: end;
 }
 
-.content{
-    display: flex;
-    flex-direction: row;
-}
-
 .object__image{
-    width: 30px;
-
+    width: 20rem
 }
 
 .body_container>.body>li{
     margin: 20px 20px 40px 0px;
-
 }
 
 
@@ -77,8 +63,12 @@
     .cloths__type{
         display: none;
     }
-    .body_container>.body{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+
+    .object__image{
+        width: 14em;
     }
+    .cate>div{
+        margin-left: 24rem;
+        font-size: 0.8rem;
+      }
 }
