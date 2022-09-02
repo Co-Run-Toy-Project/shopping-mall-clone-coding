@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.slide_pic>{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mySlides>img{
+    width: 60em;  
+}
+.numberPic>text{
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1032px) {
+    .mySlides>img{
+        width: 100vw;  
+        margin-bottom: 1rem;
+    }
+    .mySlides{}
+}
+

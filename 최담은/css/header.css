@@ -1,0 +1,123 @@
+
+.main__header{
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    align-items: center ; 
+    padding: 14px 40px 14px 50px;
+    margin: 70px 0px 120px 0px;
+}
+
+.seller__services>.practice__buttons>div:hover{
+    color: var(--hover-text-color);
+}
+.seller__services>.practice__buttons>div>a:hover{
+    color: var(--hover-text-color);
+}
+
+.nomelet__logo>a>h2{
+    cursor: pointer;
+}
+.nomelet__logo>a>h2:hover{
+    color: #1f975d;
+}
+.nomelet__logo{
+    margin-right: 140px;
+}
+.seller__services{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.practice__buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.practice__buttons>div {
+    margin: 0px 25px;
+}
+
+.customer__services{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.customer__services>div{
+    margin: 0px 15px;
+}
+.customer__services>div:hover{
+    color: var(--hover-text-color);
+}
+.customer__services>div:hover>ul{
+    color: var(--text-color);
+}
+
+.community__button{
+    position: relative;
+}
+
+.community__button>ul{
+    display: none;
+    position: absolute;
+}
+
+.community__button:hover>ul{
+    display: block;
+}
+
+.account__button>ul{
+    display: none;
+    position: absolute;
+}
+
+.account__button:hover>ul{
+    display: block;
+}
+
+/* 반응형으로 구현되는 소스 */
+.main__header>.hamburger{
+    display: none;
+}
+
+.modal{
+    width: 60%;
+    height: 100%;
+    position:absolute;
+    /* display: none; */
+    background: blue;
+}
+
+
+
+@media screen and (max-width: 1032px){
+    .main__header{
+    margin: 10px;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: space-between;   
+    /* align-items: center ;  */
+    }
+    
+
+    .nomelet__logo>a>img{
+        width : 80px;
+    }
+    .practice__buttons{
+        display: none;
+        flex-direction: column;
+    }
+    .customer__services{
+        display: none;
+    }
+
+    .main__header>.hamburger{
+        display: block;
+        margin-right: 2em;
+    }
+}

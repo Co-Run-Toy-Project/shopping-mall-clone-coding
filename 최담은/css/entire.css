@@ -1,0 +1,19 @@
+:root {
+    --text-color: #282828;
+    --hover-text-color : #868686;
+    --background-color:rgb(255, 255, 255);
+    --accent-color:
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Source Sans Pro";
+}
+
+a{
+    text-decoration: none;
+    color:var(--text-color);
+    width: 100%;
+}
+

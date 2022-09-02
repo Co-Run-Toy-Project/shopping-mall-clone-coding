@@ -6,26 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>최담은</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="./responsive.css"> -->
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/54e3de2ba9.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <script defer src="index.js"></script>
-    <SCript defer src="slide.js"></SCript>
 </head>
 <body>
-    
     <main>
         <header class="header">
             <div class="main__header">
                 <div class="seller__services">
-                    <div class="nomelet__logo" id="mainPage"><a href="./index.html"><h2 >DAMEUN'S</h2></a>
-                        
+                    <div class="nomelet__logo" id="mainPage" onclick="menuHome()">
+                        <h2 >Omelet</h2>
                     </div>
                     <div class="practice__buttons">
                         <div class="about__button">ABOUT</div>
-                        <div id="shop" class="shop__button"><a href="./about.html">SHOP</a>
-                        
+                        <div id="shop" class="shop__button" onclick="menuShop()">
+                        SHOP
                             </div>
                         <div class="collection__button">COLLECTION</div>
                     </div>
@@ -54,42 +52,7 @@
             </div>
         </header>
         <div class="body">
-            <div class="body">
-                <div class="main__picture">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 5</div>
-                        <img src="./image/000002.JPG" >
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 5</div>
-                        <img src="./image/000009.JPG" alt="">
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 5</div>
-                        <img src="./image/000011.JPG" alt="">
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">4 / 5</div>
-                        <img src="./image/000026.JPG" alt="">
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">5 / 5</div>
-                        <img src="./image/000028.JPG" alt="">
-                    </div>
-                    
-                    
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
-                        <span class="dot" onclick="currentSlide(4)"></span> 
-                        <span class="dot" onclick="currentSlide(5)"></span> 
-                      </div>
-                </div>
-            </div>
+            <iframe id="contentFrame" src="./index.html" width="100%" frameborder = '0'></iframe>
         </div>
         <div class="footer">
             <div class="business__info">

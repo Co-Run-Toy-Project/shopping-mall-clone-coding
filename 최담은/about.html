@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>노멜렛 : 상품</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/54e3de2ba9.js" crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
     <script defer src="shopList.js"></script>
+    <script defer src="./page.js"></script>
 </head>
 <body>
     <main>
-        <header>
+        <header class="header">
             <div class="main__header">
                 <div class="seller__services">
-                    <div class="nomelet__logo">
-                        <a href="./index.html">
-                            <img src="http://nomelet.co.kr/web/upload/logo/logo.png" alt="">
-                        </a>
+                    <div class="nomelet__logo" id="mainPage"><a href="./index.html"><h2 >DAMEUN'S</h2></a>
+                        
                     </div>
                     <div class="practice__buttons">
                         <div class="about__button">ABOUT</div>
-                        <div class="shop__button">SHOP</div>
+                        <div id="shop" class="shop__button"><a href="./about.html">SHOP</a>
+                        
+                            </div>
                         <div class="collection__button">COLLECTION</div>
                     </div>
                 </div>
@@ -50,26 +51,47 @@
                 </div>
             </div>
         </header>
-        <div class="aboutPage">
-            <div class="cloths__type">
-                <ul>
-                    <li>All</li>
-                    <li>Outer</li>
-                    <li>Tops</li>
-                    <li>Bottoms</li>
-                    <li>Dresses</li>
-                    <li>Acc</li>
-                </ul>
-            </div>
-            <div class="cloths__page">
-                <div class="cate">
-                    <div>All</div>
+        <div class="body">
+            <div class="aboutPage">
+                <div class="cloths__type">
+                    <ul>
+                        <li>All</li>
+                        <li>Outer</li>
+                        <li>Tops</li>
+                        <li>Bottoms</li>
+                        <li>Dresses</li>
+                        <li>Acc</li>
+                    </ul>
                 </div>
-                <div class="body_container">
-                    <div class="body" id="body"></div>
+                <div class="cloths__page">
+                    <div class="cate">
+                        <div>All</div>
+                    </div>
+                    <article class="article">
+                        <div class="body_container contents">
+                            <div class="body" id="body"></div>
+                        </div>
+                        <div class="buttons"></div>
+                    </article>
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <div class="business__info">
+                <ul>
+                    <li>Company Info. Comelet, 최담은</li>
+                    <li> E mail <a href=" nomelet.official@gmail.com"> dameun0808@gmail.com</a></li>
+                    <li>Address. 서울특별시 서초구 강남대로 회사길 101호</li>
+                    <li>반품주소. 서울특별시 서초구 강남대로 회사길</li>
+                    <li>사업자 주소 입니다 010 01010 1010</li>
+                </ul>
+            </div>
+            <div class="sns__info"></div>
+        </div>
+
+
     </main>
 </body>
 </html>

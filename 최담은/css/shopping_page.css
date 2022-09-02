@@ -1,0 +1,74 @@
+/* 옷 페이지 */
+.aboutPage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.cloths__type{
+    padding-left: 40px;
+    padding-right: 120px;
+}
+.cloths__page{
+    width: 100%;
+}
+
+.cloths__page>.cate>div{
+    display: flex;
+    justify-content: right;
+    margin-right:50px;
+    margin-bottom: 30px;
+}
+.body_container>.body{
+    align-items: flex-start;
+    /* grid-template-columns: ; */
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.body_container{
+    font-size: 12px;
+    justify-content: end;
+}
+
+.body_container >li{
+    width: 300px;
+
+    font-size: 12px;
+    justify-content: end;
+}
+
+.object__image{
+    width: 20rem
+}
+
+.body_container>.body>li{
+    margin: 20px 20px 40px 0px;
+}
+
+
+
+@media screen and (max-width: 1032px){
+
+
+
+    
+    .body>.main__picture>img{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+    .cloths__type{
+        display: none;
+    }
+
+    .object__image{
+        width: 14em;
+    }
+    .cate>div{
+        margin-left: 24rem;
+        font-size: 0.8rem;
+      }
+}
