@@ -75,9 +75,9 @@ button.dataset.num = id;
 button.innerText = id;
 button.addEventListener("click" , (e) => {
     Array.prototype.forEach.call(buttons.children, (button) => {
-        if(button.dataset.num) button.classList.remove("active");
+        if(button.dataset.num) button.classList.remove("active__page");
     });
-    e.target.classList.add("active");
+    e.target.classList.add("active__page");
     renderContent(parseInt(e.target.dataset.num));
 })
 return button
@@ -136,7 +136,7 @@ for (let id = page; id < page + maxButton && id <= maxPage; id++) {
     buttons.appendChild(makeButton(id));
 }
 // 첫 버튼 활성화(class="active")
-buttons.children[0].classList.add("active");
+buttons.children[0].classList.add("active__page");
 
 buttons.prepend(prev);
 buttons.append(next);

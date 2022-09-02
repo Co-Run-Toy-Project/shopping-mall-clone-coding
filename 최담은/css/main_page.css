@@ -1,27 +1,30 @@
-
+*{
+    box-sizing: border-box;
+}
 .body{
     width: 100%;
-    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
-.body>.main__picture>img{
-    width: 1000px;
+.slide_pic>{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-.body>.sub__picture>img{
-    width: 380px;
+.mySlides>img{
+    width: 60em;  
+}
+.numberPic>text{
+    justify-content: center;
 }
 
-.body>.sub2__picture>img{
-    width: 388px;
+
+@media screen and (max-width: 1032px) {
+    .mySlides>img{
+        width: 100vw;  
+        margin-bottom: 1rem;
+    }
+    .mySlides{}
 }
-
-
-.body>li>img{
-    width: 20rem;
-    height: auto;
-}
-
 

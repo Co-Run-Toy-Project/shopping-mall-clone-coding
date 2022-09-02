@@ -47,7 +47,7 @@
     cursor: pointer;
   }
   
-  .button.active,
+  .button.active__page,
   .button:hover {
     color: #1f975d;
     font-weight: 600;

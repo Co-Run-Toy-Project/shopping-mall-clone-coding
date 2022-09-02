@@ -17,8 +17,11 @@
     color: var(--hover-text-color);
 }
 
-.nomelet__logo>h2{
+.nomelet__logo>a>h2{
     cursor: pointer;
+}
+.nomelet__logo>a>h2:hover{
+    color: #1f975d;
 }
 .nomelet__logo{
     margin-right: 140px;
@@ -32,6 +35,7 @@
 .practice__buttons{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .practice__buttons>div {
